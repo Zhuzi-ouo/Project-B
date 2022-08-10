@@ -13,7 +13,7 @@ import requests
 from bs4 import BeautifulSoup
 
 intents = discord.Intents().all()
-client = commands.Bot(command_prefix="-", owner_ids = [768806063545516034], intents=intents)
+client = commands.Bot(command_prefix="-", owner_ids = [使用者ID], intents=intents)
 slash = SlashCommand(client, sync_commands=True)
 client.remove_command("help")
 
@@ -54,7 +54,7 @@ async def ping(ctx):
 @client.command()
 async def info(ctx):
     embed=discord.Embed(title="Project B")
-    embed.add_field(name="Version", value="Beta 1.0", inline=True)
+    embed.add_field(name="Version", value="1.0", inline=True)
     embed.set_footer(text="In development")
     await ctx.send(embed=embed)
 
