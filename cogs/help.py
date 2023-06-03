@@ -9,8 +9,8 @@ class Help(Cog_Extension):
     async def help(self, ctx):
         embed=discord.Embed(title="關於機器人指令", description="使用 -help")
         embed.add_field(name="-gay", value="你有多甲", inline=False)
-        embed.add_field(name="-say", value="讓機器人說句話")
-        embed.add_field(name="-ask", value="這件事有多大機率發生")
+        embed.add_field(name="-say", value="讓機器人說句話", inline=False)
+        embed.add_field(name="-ask", value="這件事有多大機率發生", inline=False)
         embed.add_field(name="-info", value="機器人資訊", inline=False)
         await ctx.send(embed=embed)
 
